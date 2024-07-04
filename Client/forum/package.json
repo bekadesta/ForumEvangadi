@@ -24,6 +24,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "rules": {
+    "react-hooks/exhaustive-deps": "warn",
+    "no-unused-vars": "warn"
+  },
     "extends": [
       "react-app",
       "react-app/jest"
