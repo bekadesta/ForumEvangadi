@@ -2,7 +2,7 @@ require("dotenv").config()
 const express = require("express");
 const cors = require("cors")
 const app = express()
-const port = 5500;
+const port = process.env.PORT || 5500;
 
 // db connection
 const dbconnection = require("./db/dbConfig")
@@ -21,7 +21,9 @@ app.use("/api/questions", ask)
 const answerquestions = require("./routes/answerRoute");
 app.use("/api/answer", answerquestions); //answer route middleware
 
-
+app.get("/", (req, res) => {
+  res.send("Welcome to the Forum Backend API");
+});
 
 
 
