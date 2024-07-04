@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from 'react';
 import axios from '../../axiosConfig';
 import {Link, useNavigate} from 'react-router-dom'; 
-import classes from '../LoginPage/Login.module.css'
+import classes from './Login.module.css'
 import { MdOutlineVisibility } from "react-icons/md";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import LayOut from '../../Layout/LayOut';
