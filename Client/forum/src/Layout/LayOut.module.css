@@ -1,0 +1,7 @@
+.background {
+    background-image: URL('../Assets/edited.png');
+    background-position: center;
+    /* background-size: cover; */
+    /* overflow: hidden; */
+    height: 100vh;
+}

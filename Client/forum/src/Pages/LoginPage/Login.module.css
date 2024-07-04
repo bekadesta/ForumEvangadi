@@ -1,0 +1,156 @@
+  
+.main{
+    background-image: URL("../../Assets/edited.png");
+    background-position: cover;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -50px;
+}
+
+.main_form{
+    background-color: white;
+    color: #66748E;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 450px;
+    margin-top: 20px;
+    box-shadow: 0 .5rem 1rem #00000026 !important;
+    }
+
+.main_form .sign{
+        font-size: 17px;
+        color: #333;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+.main_form .join{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #344666;
+    }
+.main_form .account{
+    margin-block-end: 0px; 
+    text-align: center;
+    }
+
+.main_form .sign{
+    align-items: center;
+    justify-content: center;
+    }
+
+    .main_form input, span{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        color: #333333;
+        font-size: 12px;
+        height: 10px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+button{
+        background-color: #516CF0;
+        color: white;
+        padding: 10px;
+        border: none;
+        /* margin-right: 0px; */
+        width: 100%;
+    }
+.buttonss {
+    padding-top: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button:hover{
+        background-color: #085ED6;
+        cursor: pointer;
+}
+
+.closing_form{
+    align-items: center;
+    margin-top: 20px;
+
+}
+.last_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 50%;
+    padding-left: 25px;
+
+}
+
+
+.last_container p {
+    font-size: 25;
+    margin: 0;
+    gap: 100px;
+}
+
+.last_container button{
+    width: 15%;
+    margin: 0 10px;
+    background-color: orange;
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+}
+a {
+    text-decoration: none;
+    color: #DA7001;
+}
+.last_container .About{
+    font-size: 20px;
+    color: #DA7001;
+    margin-bottom: 15px;
+}
+.last_container .QA{
+    color: #344666;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.icons {
+    position: absolute;
+    right: 1%;
+    left: 35%; 
+    top: 44.9%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0;
+    width: 20px;
+    height: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.icons svg{
+    color:  #191e28;
+    width: 100%;
+    height: 100%;
+}
+
+.icons:hover {
+    background-color: white;
+}

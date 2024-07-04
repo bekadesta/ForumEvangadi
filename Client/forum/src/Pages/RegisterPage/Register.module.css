@@ -1,0 +1,134 @@
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -50px;
+}
+
+.form {
+    background-color: white;
+    color: #66748E;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    width: 450px;
+    height: 450px;
+    /* margin-top: 20px; */
+    box-shadow: 0 .5rem 1rem #00000026 !important;
+}
+
+
+.form .sign{
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: center;
+
+}
+
+.form .join{
+    /* margin-bottom: 8px; */
+   text-align: center;
+   font-weight: bold;
+   color: #344666;
+}
+
+.form .have_account{
+    margin-bottom: 6px;
+    text-align: center;
+}
+.form .sign{
+margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+.form input {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    width: 92%;
+    color: #333333;
+    font-size: 14px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.names{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    /* grid-template-columns: 1fr 1fr; */
+
+}
+button{
+    background-color: #516CF0;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    /* width: 100%; */
+}
+button:hover{
+    background-color: #085ED6;
+    cursor: pointer;
+}
+.closing_form{
+    align-items: center;
+    margin-top: 20px;
+
+}
+.last_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 50%;
+    padding-left: 25px;
+
+}
+.last_container button{
+    width: 15%;
+    margin: 0 10px;
+    background-color: orange;
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+}
+a {
+    text-decoration: none;
+    color: #DA7001;
+}
+.last_container .About{
+    font-size: 15px;
+    color: #DA7001;
+    margin-bottom: 15px;
+}
+.last_container .QA{
+    color: #344666;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.last_container p {
+    font-size: 25;
+    margin: 0;
+    gap: 100px;
+}
+
+
+.loginPrompt {
+    font-size: 16px; /* add px for font size */
+    color: orange;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
