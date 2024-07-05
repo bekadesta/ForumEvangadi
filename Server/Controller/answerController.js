@@ -16,9 +16,10 @@ async function answerQuestion(req, res) {
       .status(StatusCodes.CREATED)
       .json({ message: "The answer has been posted successfully." });
   } catch (error) {
+    console.log(error)
     return res
       .status(StatusCodes.INTERNAL_SERVER_ERROR)
-      .json({ msg: "Something went wrong. Please try again later." });
+      .json({ msg: "EMBIALE" });
   }
 }
 module.exports = { answerQuestion };

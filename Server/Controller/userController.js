@@ -4,6 +4,7 @@ const { StatusCodes } = require("http-status-codes")
 const jwt = require("jsonwebtoken")
 
 async function register(req, res) {
+    console.log(req.body)
     const { username, firstname, lastname, email, password } = req.body;
     if(!username || !firstname || !lastname || !email || !password){
         return res.status(StatusCodes.BAD_REQUEST).json({msg: "please provide all required fields" })
