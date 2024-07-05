@@ -21,7 +21,7 @@ const [selectData, setSelectData] = useState([]);
   useEffect(() => {
     async function selectUser() {
       try {
-        const { data } = await axios.get("/questions/selectquestion", {
+        const { data } = await axios.get("/api/questions/selectquestion", {
           headers: { Authorization: `Bearer ${token}` },
         });
 

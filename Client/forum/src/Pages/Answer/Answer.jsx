@@ -19,7 +19,7 @@ function Answer() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const { data } = await axios.get(`/questions/selectsinglequestion`, {
+        const { data } = await axios.get(`/api/questions/selectsinglequestion`, {
           params: { questionId },
         });
         if (data.question) {
@@ -27,7 +27,7 @@ function Answer() {
         } else {
           console.error("Question not found:", data);
         }
-        const qanswer = await axios.get(`/questions/selectanswer`, {
+        const qanswer = await axios.get(`/api/questions/selectanswer`, {
           params: { questionId },
         });
         setanswer(qanswer.data.Allanswers || []);
@@ -38,7 +38,7 @@ function Answer() {
     }
     fetchData();
   }, [questionId]);
-
+console.log(user.userid, questionId, answervalue)
   async function handleSubmit(e) {
     e.preventDefault();
     const answervalue = answerDOM.current.value;
@@ -48,7 +48,7 @@ function Answer() {
     }
     
     try {
-      await axios.post("/answer/answerQuestion", {
+      await axios.post("/api/answer/answerQuestion", {
         userid: user.userid,
         questionId: questionId,
         answer: answervalue,
@@ -56,7 +56,7 @@ function Answer() {
       setansmessage("The Answer Posted Successfully");
       answerDOM.current.value = "";
 
-      const qanswer = await axios.get(`/questions/selectanswer`, {
+      const qanswer = await axios.get(`/api/questions/selectanswer`, {
         params: { questionId },
       });
       setanswer(qanswer.data.Allanswers || []);

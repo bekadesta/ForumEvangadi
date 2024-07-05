@@ -21,13 +21,13 @@ function Question() {
   useEffect(() => {
     async function selectsinglequestion() {
       try {
-        const { data } = await axios.get(`/answer/selectsinglequestion`, {
+        const { data } = await axios.get(`/api/answer/selectsinglequestion`, {
           params: { questionId },
           headers: { authorization: "Bearer " + token },
         });
         setsingledata(data.question);
 
-        const qanswer = await axios.get(`/questions/selectanswer`, {
+        const qanswer = await axios.get(`/api/questions/selectanswer`, {
           params: { questionId },
           headers: { authorization: "Bearer " + token },
         });
@@ -54,7 +54,7 @@ function Question() {
       return;
     }
     try {
-      await axios.post("/questions/ask" , {
+      await axios.post("/api/questions/ask" , {
         userid: user.userid,
         title: titlevalue,
         description: Descvalue,
@@ -91,7 +91,7 @@ function Question() {
         <div className={classes.form__container}>
           <h3>Ask a public question</h3>
 
-          <Link to={"http://localhost:3000/"}>Go to Question page</Link>
+          <Link to={"/"}>Go to Question page</Link>
           <div>
             <p
               style={{

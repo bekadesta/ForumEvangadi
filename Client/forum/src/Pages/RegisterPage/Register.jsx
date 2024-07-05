@@ -28,16 +28,17 @@ function Register() {
       alert("Please fill in all the fields")
       return;
     }
+    console.log(usernameValue, firstValue, lastValue)
+
 
     try {
-      const { data } = await axios.post('/users/register', {
+      const { data } = await axios.post('/api/users/register', {
         username: usernameValue,
         firstname: firstValue,
         lastname: lastValue,
         email: emailValue,
         password: passwordValue,
       });
-
       alert('Registration Successful');
       localStorage.setItem('token', data.token);
       localStorage.setItem("username", data.username);
