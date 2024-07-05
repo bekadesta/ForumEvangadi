@@ -16,4 +16,6 @@ router.post("/login", login)
 //route for authentication
 router.get("/check", authMiddleware ,check)
 
+// router.get("/createtable", createtable)
+
 module.exports = router

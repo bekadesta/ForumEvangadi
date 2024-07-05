@@ -86,4 +86,45 @@ async function check(req, res) {
     // res.send("checkuser")
 }
 
+// async function createtable (req, res) {
+//     const tables = 
+//     `CREATE TABLE users(
+//     userid INT(20) NOT NULL AUTO_INCREMENT,
+//     username VARCHAR(20) NOT NULL, 
+//     firstname VARCHAR(20) NOT NULL,
+//     lastname VARCHAR(20) NOT NULL,
+//     email VARCHAR(40) NOT NULL,
+//     password VARCHAR(100) NOT NULL,
+//     PRIMARY KEY(userid)
+// );
+// `
+// const questions =  `CREATE TABLE questions(
+//     id INT(20) NOT NULL AUTO_INCREMENT,
+//     questionid VARCHAR(100) NOT NULL UNIQUE,
+//     userid INT(20) NOT NULL,
+//     title VARCHAR(50) NOT NULL,
+//     description VARCHAR(200) NOT NULL,
+//     tag VARCHAR(20),
+//     PRIMARY KEY(id, questionid),
+//     FOREIGN KEY(userid) REFERENCES users(userid)
+// );
+// `
+// const answertable = `CREATE TABLE answers(
+//     answerid INT(20) NOT NULL AUTO_INCREMENT,
+//     userid INT(20) NOT NULL,
+//     questionid VARCHAR(100) NOT NULL,
+//     answer VARCHAR(200) NOT NULL,
+//     PRIMARY KEY(answerid),
+//     FOREIGN KEY(questionid) REFERENCES questions(questionid),
+//     FOREIGN KEY(userid) REFERENCES users(userid)
+// );`
+
+// try{
+//     await dbconnection.query(answertable)
+//     return res.status(StatusCodes.OK).json({ msg: "Table Created" });
+// }catch(error){
+//     console.log(error.message)
+// }
+// }
+
 module.exports = {register, login, check}
