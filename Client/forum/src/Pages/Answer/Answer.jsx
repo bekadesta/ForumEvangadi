@@ -38,7 +38,6 @@ function Answer() {
     }
     fetchData();
   }, [questionId]);
-console.log(user.userid, questionId, answervalue)
   async function handleSubmit(e) {
     e.preventDefault();
     const answervalue = answerDOM.current.value;
